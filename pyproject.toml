@@ -1,6 +1,6 @@
 [project]
 name = "streaming-quantile"
-version = "0.1.0"
+version = "0.1.1"
 description = "Approximate percentiles over a stream in constant memory."
 requires-python = ">=3.10"
 dependencies = []
