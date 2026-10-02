@@ -40,3 +40,10 @@ The package exports one class:
   - `estimate()` — return the current quantile estimate (or `nan`).
 
 Only the standard library is used.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
